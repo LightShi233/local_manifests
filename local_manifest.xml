@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="github" fetch="https://github.com" />
-    
-    <project path="device/xiaomi/cannon" name="lightshi233/android_device_xiaomi_cannon" remote="github" />
-    <project path="vendor/xiaomi/cannon" name="xiaomi-mt6853-devs/android_vendor_xiaomi_cannon" remote="github" />
-    <project path="kernel/xiaomi/cannon" name="lightshi233/android_kernel_xiaomi_cannon" remote="github" />
-    <project path="hardware/mediatek/wlan" name="xiaomi-mt6853-devs/android_hardware_mediatek_wlan" remote="github" />
-    <project path="vendor/mediatek/ims" name="xiaomi-mt6853-devs/ImsService" remote="github" />
-    <project path="vendor/mediatek/location/lppe" name="xiaomi-mt6853-devs/LPPeService" remote="github" />
-    <project path="device/mediatek/sepolicy_vndr" name="ArrowOS/android_device_mediatek_sepolicy_vndr" remote="github" />
-    <project path="vendor/mediatek/telephony/base" name="xiaomi-mt6853-devs/MediatekTelephonyBase" remote="github" />
+    <remote name="devs" fetch="ssh://git@github.com" revision="lineage-20" />
+    <project path="device/xiaomi/cannon" name="xiaomi-mt6853-devs/android_device_xiaomi_cannon" remote="devs" />
+    <project path="vendor/xiaomi/cannon" name="xiaomi-mt6853-devs/android_vendor_xiaomi_cannon" remote="devs" />
+    <project path="kernel/xiaomi/cannon" name="xiaomi-mt6853-devs/android_kernel_xiaomi_cannon" remote="devs" />
+    <project path="device/mediatek/sepolicy_vndr" name="LineageOS/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-20" />
 </manifest>
